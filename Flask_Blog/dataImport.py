@@ -8,9 +8,9 @@ f = open("posts.json", encoding="utf-8")
 data = json.load(f)
 # 2.遍历data，打印列表中的每一个字典
 for dict_data in data:
-    # print(dict_data)
-    # print(dict_data['title'])
-    # print(dict_data['content'])
+    print(dict_data)
+    print(dict_data['title'])
+    print(dict_data['content'])
     id = dict_data["user_id"]
     # user('guzongxu', 'gzx723547242@gmail.com', '8916f94bf72e49c7.jpg')
     # user = User.query.get(id)
